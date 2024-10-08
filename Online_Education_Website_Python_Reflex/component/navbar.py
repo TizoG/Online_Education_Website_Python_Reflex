@@ -5,40 +5,76 @@ def navbar() -> rx.Component:
     return rx.box(
         rx.hstack(
             rx.image(
-                src="/assets/logo.png",
+                src="/logo.png",
                 width="124px",
                 height="77px",
                 margin_x="77px",
-                margin_y="43px"
+
             ),
             rx.hstack(
                 rx.link(
-                    "Inicio",
+                    rx.button(
+                        "Inicio",
+                        color="black",
+                        font_size="22px",
+                        weight="medium",
+                        bg="transparent",
+                        _hover={
+                            "bg": "black",
+                            "color": "#FFF",
+                            "text_decoration": "none",
+                            "cursor": "pointer"
+                        }
+                    ),
                     href="#",
-                    color="black",
-                    size="5",
-                    weight="medium"
                 ),
                 rx.link(
-                    "Sobre mi",
+                    rx.button(
+                        "Conocenos",
+                        color="black",
+                        font_size="22px",
+                        weight="medium",
+                        bg="transparent",
+                        _hover={
+                            "bg": "black",
+                            "color": "#FFF",
+                            "text_decoration": "none",
+                            "cursor": "pointer"
+                        }
+                    ),
                     href="#",
-                    color="black",
-                    size="5",
-                    weight="medium"
                 ),
                 rx.link(
-                    "Cursos",
+                    rx.button(
+                        "Cursos",
+                        color="black",
+                        font_size="22px",
+                        weight="medium",
+                        bg="transparent",
+                        _hover={
+                            "bg": "black",
+                            "color": "#FFF",
+                            "text_decoration": "none",
+                            "cursor": "pointer"
+                        }
+                    ),
                     href="#",
-                    color="black",
-                    size="5",
-                    weight="medium"
                 ),
                 rx.link(
-                    "Contacto",
+                    rx.button(
+                        "Contacto",
+                        color="black",
+                        font_size="22px",
+                        weight="medium",
+                        bg="transparent",
+                        _hover={
+                            "bg": "black",
+                            "color": "#FFF",
+                            "text_decoration": "none",
+                            "cursor": "pointer"
+                        }
+                    ),
                     href="#",
-                    color="black",
-                    size="5",
-                    weight="medium"
                 ),
                 spacing="59px",
                 margin_left="300px",
@@ -80,12 +116,17 @@ def navbar() -> rx.Component:
                     ),
                     spacing="15px"
                 ),
-                margin_left="263px"
+                margin_left="auto",
+                margin_right="78px"
             ),
 
             align_items="center",
-            padding="10px 20px"
+
         ),
         bg="#FFF",
-        align_items="center"
+        align_items="center",
+        width="100%",
+        height="77px",
+        margin_top="43px",
+
     )
